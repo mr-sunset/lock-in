@@ -10,31 +10,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.inactive { background-color: rgb(255, 154, 154); }
-.active { background-color: rgb(147, 255, 147); }
+.inactive { background-color: rgb(255, 156, 156); box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
+.active { background-color: rgb(164, 255, 164); box-shadow: none; transform: scale(0.95); }
 
 #button {
     padding: 20px 40px;
-    border: 3px solid black;
-    border-radius: 16px;
-    /* background-color: rgb(255, 154, 154); */
-    color: black;
-    font-weight: 700;
     cursor: pointer;
-    box-shadow: 0 8px black;
-    user-select: none;
-    touch-action: manipulation;
+    border: 3px solid black;
+    border-radius: 12px;
+    color: black;
     transition: all 0.12s ease;
-}
-
-#button:active {
-    transform: translateY(9px);
-    box-shadow: none;
-}
-
-@media (hover: hover) {
-    #button:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 13px;
-    }
 }
