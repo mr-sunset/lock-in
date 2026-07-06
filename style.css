@@ -18,18 +18,23 @@ body {
     border: 3px solid black;
     border-radius: 16px;
     /* background-color: rgb(255, 154, 154); */
+    color: black;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: 0 8px;
+    box-shadow: 0 8px black;
+    user-select: none;
+    touch-action: manipulation;
     transition: all 0.12s ease;
-}
-
-#button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 13px;
 }
 
 #button:active {
     transform: translateY(9px);
     box-shadow: none;
+}
+
+@media (hover: hover) {
+    #button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 13px;
+    }
 }
